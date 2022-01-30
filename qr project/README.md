@@ -28,7 +28,7 @@ It's a basic card with a qr img and some information just below of it.
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://qr-project-frontendmento.netlify.app/)
 
 ### Built with
 
