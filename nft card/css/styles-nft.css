@@ -13,7 +13,7 @@ body {
   height: 100vh;
 }
 
-body main div.card {
+body main section.card {
   background-color: #14253d;
   width: 350px;
   border-radius: 10px;
@@ -23,12 +23,12 @@ body main div.card {
   position: relative;
 }
 
-body main div.card div.nft {
+body main section.card div.nft {
   width: 100%;
   margin: auto;
 }
 
-body main div.card div.nft:after {
+body main section.card div.nft:after {
   content: '';
   position: absolute;
   width: 302px;
@@ -42,12 +42,12 @@ body main div.card div.nft:after {
   transition: .5s;
 }
 
-body main div.card div.nft :nth-child(1) {
+body main section.card div.nft :nth-child(1) {
   width: 100%;
   border-radius: 10px;
 }
 
-body main div.card div.nft :nth-child(2) {
+body main section.card div.nft :nth-child(2) {
   width: 15%;
   position: absolute;
   top: 150px;
@@ -58,29 +58,29 @@ body main div.card div.nft :nth-child(2) {
   z-index: 3;
 }
 
-body main div.card div.nft:hover {
+body main section.card div.nft:hover {
   cursor: pointer;
 }
 
-body main div.card div.nft:hover:after {
+body main section.card div.nft:hover:after {
   opacity: 0.5;
 }
 
-body main div.card div.nft:hover :nth-child(1) {
+body main section.card div.nft:hover :nth-child(1) {
   background-color: cyan;
 }
 
-body main div.card div.nft:hover :nth-child(2) {
+body main section.card div.nft:hover :nth-child(2) {
   opacity: 1;
 }
 
-body main div.card div.icon-view {
+body main section.card div.icon-view {
   position: absolute;
   top: 150px;
   left: 150px;
 }
 
-body main div.card div.text {
+body main section.card div.text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,11 +94,11 @@ body main div.card div.text {
   gap: 1rem;
 }
 
-body main div.card div.text h1, body main div.card div.text p {
+body main section.card div.text h1, body main section.card div.text p {
   color: white;
 }
 
-body main div.card div.text h1 {
+body main section.card div.text h1 {
   margin: 1rem 0;
   font-size: 1.5rem;
   font-weight: 600;
@@ -107,68 +107,68 @@ body main div.card div.text h1 {
   transition: all .3s;
 }
 
-body main div.card div.text h1:hover, body main div.card div.text h1 :active, body main div.card div.text h1 :focus {
+body main section.card div.text h1:hover, body main section.card div.text h1 :active, body main section.card div.text h1 :focus {
   color: Cyan;
   cursor: pointer;
 }
 
-body main div.card div.text p.description {
+body main section.card div.text p.description {
   font-size: 18px;
   font-weight: 300;
   color: #8bacda;
   line-height: 1.5;
 }
 
-body main div.card div.text div.time p, body main div.card div.text div.eth p {
+body main section.card div.text div.time p, body main section.card div.text div.eth p {
   display: inline-block;
   font-weight: 300;
   font-size: 1rem;
   margin-left: 0.3rem;
 }
 
-body main div.card div.text div.time p:not(.days), body main div.card div.text div.eth p:not(.days) {
+body main section.card div.text div.time p:not(.days), body main section.card div.text div.eth p:not(.days) {
   font-weight: 400;
 }
 
-body main div.card div.text div.time img, body main div.card div.text div.eth img {
+body main section.card div.text div.time img, body main section.card div.text div.eth img {
   vertical-align: bottom;
 }
 
-body main div.card div.text div.eth p {
+body main section.card div.text div.eth p {
   color: #00fff7;
 }
 
-body main div.card div.text div.time p {
+body main section.card div.text div.time p {
   color: #8bacda;
 }
 
-body main div.card div.text div.credits {
+body main section.card div.text div.credits {
   width: 100%;
   padding-top: 1rem;
   border-top: 1px solid #2f415b;
 }
 
-body main div.card div.text div.credits img {
+body main section.card div.text div.credits img {
   width: 30px;
   vertical-align: middle;
   border-radius: 50%;
   border: 1px solid white;
 }
 
-body main div.card div.text div.credits p {
+body main section.card div.text div.credits p {
   font-weight: 400;
   color: #8bacda;
   display: inline-block;
   margin-left: 0.8rem;
 }
 
-body main div.card div.text div.credits p span {
+body main section.card div.text div.credits p span {
   color: white;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
 
-body main div.card div.text div.credits p span:hover, body main div.card div.text div.credits p span :active, body main div.card div.text div.credits p span :focus {
+body main section.card div.text div.credits p span:hover, body main section.card div.text div.credits p span :active, body main section.card div.text div.credits p span :focus {
   color: Cyan;
   cursor: pointer;
 }
