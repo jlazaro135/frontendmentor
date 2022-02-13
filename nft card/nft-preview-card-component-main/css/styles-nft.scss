@@ -1,0 +1,167 @@
+// primary colors
+$SoftBlue: hsl(215, 51%, 70%);
+$Cyan: hsl(178, 100%, 50%);
+// neutral colors
+$VeryDarkBlue_main: hsl(217, 54%, 11%);
+$VeryDarkBlue_card: hsl(216, 50%, 16%);
+$VeryDarkBlue_line: hsl(215, 32%, 27%);
+
+$White: hsl(0, 0%, 100%);
+// fon-size
+$para: 18px;
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    background-color: $VeryDarkBlue_main;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    main{
+        div.card{
+            background-color: $VeryDarkBlue_card;
+            width: 350px;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0px 0px 30px #040e1d85;
+            position: relative;
+            div.nft{
+                width: 100%;
+                margin: auto;
+                &:after{
+                    content: '';
+                    position: absolute;
+                    width: 302px;
+                    height: 302px;
+                    background-color: cyan;
+                    top: 23px;
+                    left: 23px;
+                    border-radius: 10px;
+                    opacity: 0;
+                    transition: .5s;
+                }
+                :nth-child(1){
+                    width: 100%;
+                    border-radius: 10px;
+                }
+                :nth-child(2){
+                    width: 15%;
+                    position: absolute;
+                    top: 150px;
+                    left: 150px;
+                    opacity: 0;
+                    transition: all .3s;
+                    z-index: 3;
+                }
+                &:hover{
+                    cursor: pointer;
+                    &:after{
+                        opacity: 0.5;
+                    }
+                    :nth-child(1){
+                        background-color: cyan;
+                    }
+                    :nth-child(2){
+                        opacity: 1;
+                    }
+                }
+            }
+            div.icon-view{
+                position: absolute;
+                top: 150px;
+                left: 150px;
+            }
+            div.text{
+                display:flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                gap: 1rem;
+                h3, p{
+                    color: white;
+                }
+                h3{
+                    margin: 1rem 0;
+                    font-weight: 600;
+                    margin-bottom: 0;
+                    transition: all .3s;
+                    &:hover, :active, :focus{
+                        color: Cyan;
+                        cursor: pointer;
+                    }
+                }
+                p.description{
+                    font-size: $para;
+                    font-weight: 300;
+                    color: $SoftBlue;
+                    line-height: 1.5;
+                }
+                div.time, div.eth{
+                    p{
+                        display: inline-block;
+                        font-weight: 300;
+                        font-size: 1rem;
+                        margin-left: 0.3rem;
+                    }
+                    p:not(.days){
+                        font-weight: 400;
+                    }
+                    img{
+                        vertical-align: bottom;
+                    }
+                }
+                div.eth{
+                    p{
+                        color: $Cyan;
+                    }
+                }
+                div.time{
+                    p{
+                        color: $SoftBlue;
+                    }
+                }
+                div.credits{
+                    width: 100%;
+                    padding-top: 1rem;
+                    border-top: 1px solid $VeryDarkBlue_line;
+                    img{
+                        width: 30px;
+                        vertical-align: middle;
+                        border-radius: 50%;
+                        border: 1px solid white;
+                    }
+                    p{
+                        font-weight: 400;
+                        color: $SoftBlue;
+                        display: inline-block;
+                        margin-left: 0.8rem;
+                        span{
+                            color: white;
+                            transition: all .3s;
+                            &:hover, :active, :focus{
+                                color: Cyan;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    footer{
+        p{
+            font-size: 11px; text-align: center;
+            color: white;
+            display: inline-block;
+            a{
+                color: hsl(228, 45%, 44%);
+            }
+        }
+
+    }
+}
