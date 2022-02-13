@@ -94,19 +94,20 @@ body main div.card div.text {
   gap: 1rem;
 }
 
-body main div.card div.text h3, body main div.card div.text p {
+body main div.card div.text h1, body main div.card div.text p {
   color: white;
 }
 
-body main div.card div.text h3 {
+body main div.card div.text h1 {
   margin: 1rem 0;
+  font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 0;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
 
-body main div.card div.text h3:hover, body main div.card div.text h3 :active, body main div.card div.text h3 :focus {
+body main div.card div.text h1:hover, body main div.card div.text h1 :active, body main div.card div.text h1 :focus {
   color: Cyan;
   cursor: pointer;
 }
